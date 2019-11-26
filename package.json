@@ -1,0 +1,11 @@
+{
+  "name": "adamant_test",
+  "version": "1.0.0",
+  "description": "test tast for adamant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mirkulov Andrey (verrmqa)",
+  "license": "MIT"
+}

@@ -1,0 +1,134 @@
+/* normalize */
+* {
+  padding: unset;
+  margin: unset;
+  border: unset;
+  outline: unset;
+  font-weight: 400;
+  font-family: 'Segoe UI', arial, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+  font-weight: unset;
+}
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection {
+  background: #a68053;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background: #a68053;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 1.2vw;
+  line-height: 1.5;
+}
+
+body {
+}
+
+ul,
+ol,
+li,
+a,
+p,
+span,
+strong,
+i,
+em,
+div,
+section {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: unset;
+}
+
+ul::-moz-selection,
+ol::-moz-selection,
+li::-moz-selection,
+a::-moz-selection,
+p::-moz-selection,
+span::-moz-selection,
+strong::-moz-selection,
+i::-moz-selection,
+em::-moz-selection,
+div::-moz-selection,
+section::-moz-selection {
+  background: #bfa065;
+}
+
+ul::selection,
+ol::selection,
+li::selection,
+a::selection,
+p::selection,
+span::selection,
+strong::selection,
+i::selection,
+em::selection,
+div::selection,
+section::selection {
+  background: #bfa065;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #a68053;
+  text-decoration: unset;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+ul,
+ol,
+li,
+button,
+span {
+  display: block;
+}
+
+button,
+a {
+  cursor: pointer;
+}
