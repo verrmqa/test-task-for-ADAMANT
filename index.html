@@ -1,14 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Тестовое для ADAMANT</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Тестовое для ADAMANT</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <a class="header__logo">
+            <img src="./assets/img/logo.png" alt="" />
+          </a>
+
+          <div class="header__title">
+            <h2 class="title title--header">
+              Хотите иметь свой участок в Подмосковье?
+            </h2>
+          </div>
+
+          <div class="header__button">
+            <a href="" class="button button--orange">Перезвоните мне</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="section section__event">
+        <div class="container">
+          <div class="event">
+            <div class="event__title">
+              <span class="title title--event">
+                Акция в Январе -
+                <span class="title title--event text--underline"
+                  >30% скидка</span
+                >
+                на землю и коммуникации в п. Владимировка
+              </span>
+            </div>
+            <div class="event__attention">
+              <span class="title title--attention">
+                <span class="text text--bold">Внимание!</span> Осталось
+                <span class="text text--underline text--bold">63</span> участка
+                из 215!
+              </span>
+            </div>
+            <div class="event__content">
+              <div class="event__features">
+                <div class="event__feature">
+                  <div class="event__feature_number">01.</div>
+                  <div class="event__feature_content">
+                    <span class="text">
+                      <span class="text text--bold">50 минут</span> езды от
+                      Москвы
+                    </span>
+                  </div>
+                </div>
+                <div class="event__feature">
+                  <div class="event__feature_number">02.</div>
+                  <div class="event__feature_content">
+                    <span class="text">
+                      <span class="text text--bold">55 км</span> от МКАД по
+                      Новорязанскому шоссе
+                    </span>
+                  </div>
+                </div>
+                <div class="event__feature">
+                  <div class="event__feature_number">03.</div>
+                  <div class="event__feature_content">
+                    <span class="text">
+                      <span class="text text--bold">Разрешение</span> для
+                      дачного строительства
+                      <span class="text text--bold">с правом</span> возведения
+                      жилого дома,
+                      <span class="text text--bold"
+                        >регистрации и проживания</span
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event__form">
+                <div class="event__title_form">
+                  <h3 class="title title--form">
+                    <span class="text text--bold">Оставьте заявку</span> сейчас
+                    <span class="text text--bold">и получите скидку 30%</span>
+                    на участок и коммуникации
+                  </h3>
+                </div>
+
+                <div class="event__formbox">
+                  <form
+                    id="form-contact_event"
+                    method="POST"
+                    class="request__form_event"
+                    autocomplete="off"
+                  >
+                    <div class="form-title_box">
+                      <p class="form-title_event"></p>
+                      <p class="form-message_event"></p>
+                    </div>
+                    <div class="event__input_block">
+                      <input
+                        name="name_event"
+                        type="text"
+                        id="input--name_event"
+                        class="input input-name"
+                        placeholder="Ваше имя"
+                        tabindex="0"
+                        required
+                      />
+                    </div>
+
+                    <div class="event__input_block">
+                      <input
+                        name="phone_event"
+                        type="tel"
+                        id="input--phone_event"
+                        class="input input-phone"
+                        placeholder="Ваш телефон"
+                        tabindex="0"
+                        required
+                      />
+                    </div>
+
+                    <input
+                      name="theme_event"
+                      type="hidden"
+                      class="form-input__theme"
+                      value="Заявка с сайта"
+                    />
+                    <div class="request__form_button">
+                      <input
+                        type="submit"
+                        disabled="disabled"
+                        class="button button-form button--green"
+                        id="submit"
+                        value="Получить скидку"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event__bottom_sticker"></div>
+      </article>
+    </main>
+  </body>
 </html>

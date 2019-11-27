@@ -1,0 +1,361 @@
+/* цвета */
+
+$yellowColor: #ffd21f;
+$blackColor: #222222;
+$orangeColor: #b96616;
+$greenColor: #437f13;
+
+/* заголовки */
+
+.title {
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+  display: inline;
+  &--header {
+    font-size: 30px;
+  }
+  &--event {
+    font-size: 36px;
+    color: #ffd21f;
+  }
+  &--attention {
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  }
+  &--form {
+    font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: $blackColor;
+  }
+}
+
+/* текст */
+
+.text {
+  display: inline;
+  &--underline {
+    text-decoration: underline;
+  }
+  &--bold {
+    font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+  }
+}
+
+/* кнопки */
+
+.button {
+  font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top, #e8821c, #fac01e);
+  font-size: 18px;
+  padding: 14px 60px;
+  border-radius: 3px;
+  transition: all 0.3s;
+  box-shadow: 0px 5px #b96616;
+  &:hover {
+    background: linear-gradient(to top, #fac01e, #e8821c);
+    box-shadow: 0px 5px #ffdf85;
+    color: #fff;
+  }
+  &--green {
+    background: linear-gradient(to top, #56a018, #92c917);
+    box-shadow: 0px 5px #427e13;
+    &:hover {
+      background: linear-gradient(to top, #92c917, #56a018);
+      box-shadow: 0px 5px #b4cf79;
+    }
+  }
+  &-form {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+/* поля ввода */
+
+.input {
+  color: $blackColor;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  padding: 14px 21px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 60px;
+  &-name {
+    background: url(../assets/img/user.svg) no-repeat 92% 50% #f7f7f7;
+  }
+  &-phone {
+    background: url(../assets/img/phone.svg) no-repeat 92% 50% #f7f7f7;
+  }
+}
+
+/* контейнер */
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* мэйн и секции */
+
+main {
+  background-image: url(../assets/img/header-img.jpg);
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  background-size: cover;
+
+  .section {
+    &__event {
+      padding-bottom: 155px;
+    }
+  }
+}
+
+/* хедер */
+
+header {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    width: 430px;
+    text-align: center;
+    margin-left: 130px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* блок акции */
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    width: 680px;
+    text-align: center;
+    &_form {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__attention {
+    margin: 25px 0 30px 0;
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 830px;
+  }
+  &__feature {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+    &_number {
+      background-color: #fff;
+      color: $yellowColor;
+      border-radius: 50%;
+      display: flex;
+      border: 5px solid $yellowColor;
+      justify-content: center;
+      align-items: center;
+      font-family: "Roboto-Bold", Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      width: 70px;
+      height: 70px;
+      z-index: 1;
+    }
+    &_content {
+      color: $blackColor;
+      width: 370px;
+      background-color: $yellowColor;
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      padding: 10px 30px 10px 55px;
+      border-radius: 3px;
+      position: absolute;
+      left: 30px;
+      font-size: 16px;
+    }
+  }
+  &__form {
+    background: #fff;
+    width: 330px;
+    padding: 30px;
+    border-radius: 3px;
+  }
+  &__bottom_sticker {
+    position: absolute;
+    background-image: url(../assets/img/header-after-img.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 162px;
+    background-size: cover;
+  }
+}
+
+/* media queries */
+
+@media all and (max-width: 1230px) {
+  .button {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header__logo img {
+    width: 100px;
+  }
+  .button {
+    font-size: 17px;
+    padding: 14px 20px;
+  }
+  .header__title {
+    width: 430px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .title--header {
+    font-size: 26px;
+  }
+}
+
+@media all and (max-width: 870px) {
+  .event__content {
+    width: 750px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .title {
+    &--header {
+      font-size: 20px;
+    }
+    &--event {
+      font-size: 24px;
+    }
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      padding: 20px 0;
+    }
+    &__button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  main {
+    padding-top: 200px;
+  }
+
+  .event {
+    &__title {
+      width: 100%;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__feature {
+      &_number {
+        position: absolute;
+        left: -30px;
+      }
+      &_content {
+        position: unset;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 520px) {
+  .title {
+    &--event {
+      font-size: 21px;
+    }
+    &--attention {
+      font-size: 19px;
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  .title {
+    &--form {
+      font-size: 13px;
+    }
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .input {
+    padding: 8px 6px;
+    font-size: 13px;
+    height: 38px;
+  }
+
+  .header {
+    &__title {
+      width: 100%;
+    }
+  }
+
+  main {
+    padding-top: 225px;
+  }
+
+  .event {
+    &__feature {
+      &_number {
+        left: -15px;
+      }
+      &_content {
+        width: 100%;
+        margin-left: 15px;
+        font-size: 14px;
+        padding: 10px 16px 10px 42px;
+      }
+    }
+    &__form {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  .button {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  main {
+    padding-top: 250px;
+  }
+}
